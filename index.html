@@ -12,15 +12,30 @@
     <header>
       <h1>Escale seu time!</h1>
     </header>
-
-    <form>
-      <label for="position">Posição:</label>
-      <input type="text" name="position" id="position" />
-      <label for="name">Nome do jogador:</label>
-      <input type="text" name="name" id="name" />
-      <label for="number">Número:</label>
-      <input type="number" name="number" id="number" />
-    </form>
+    <section>
+      <form id="form-top">
+        <label for="position">Posição:</label>
+        <select name="position" id="position">
+          <option value="Goleiro(a)">Goleiro(a)</option>
+          <option value="Zagueiro(a)">Zagueiro(a)</option>
+          <option value="Volante">Volante</option>
+          <option value="Lateral Esquerdo">Lateral Esquerdo</option>
+          <option value="Lateral Direito">Lateral Direito</option>
+          <option value="Meio Campo">Meio Campo</option>
+          <option value="Atacante">Atacante</option>
+          <option value="Centrovante">Centrovante</option>
+        </select>
+        <label for="name">Nome do jogador:</label>
+        <input type="text" name="name" id="name" placeholder="Seu Nome" />
+        <label for="number">Número:</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Número camisa"
+        />
+      </form>
+    </section>
     <div class="button">
       <button id="addPlayer" onclick="addPlayer()">Escalar!</button>
     </div>
